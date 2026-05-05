@@ -1,31 +1,33 @@
 body {
-    background-image: url(kotaeche-street-7717463_1920.jpg);
-    background-color: rgba(0, 0, 0, 0.65);
-    background-size: 1920px, 1280px;   
+
+    background-color: rgba(0, 0, 0, 0.945);
+    background-size: cover;   
      margin: 0;
 }
 
 
+    background-image:  url(kotaeche-street-7717463_1920.jpg) ;
+
+
+
+.root{
+    max-width: 60rem;
+}
 
 header,
 main,
 footer {
     display: flex;
-    background-color: rgba(0, 0, 0, .65);
     color: white;
 }
 
 header, main {
-
     align-items: center;
 }
 
-footer{
-    background-color: black;
-}
+
 
 header{
-    background-color: rgb(0, 0, 0);
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -47,10 +49,34 @@ nav a:hover {
 
 .Projects{
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
+    flex-direction: column;
+    width: ;
+}
+
+.img1, .img2{
+    border: solid;
+    border-radius: .5rem;
+    border-color: rgb(255, 255, 255);
+    width: 15rem;   
+     background-size: cover;
+    padding: 2rem;
+    color: rgba(255, 255, 255, 0);
+
+}
+
+.img1{
+    background-image: url(GraveLanters.png);
+    background-size: cover;
+    padding: 2rem;
+}
+
+.img2{
+    background-image: url(LettersSky.png);
+
 }
 
 
 .Centrerad{
-    width: 60rem;
+    width:  60rem;
 }
