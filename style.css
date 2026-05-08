@@ -1,39 +1,42 @@
 body {
-
     background-color: rgba(0, 0, 0, 0.945);
-    background-size: cover;   
-     margin: 0;
+    background-image: url(kotaeche-street-7717463_1920.jpg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.65) 0px 18px 36px 1000px inset;
+    background-size: cover;
+    margin: 0;
 }
 
 
-    background-image:  url(kotaeche-street-7717463_1920.jpg) ;
+background-image: url(kotaeche-street-7717463_1920.jpg);
 
 
 
-.root{
-    max-width: 60rem;
+:root {
+    --max-width: 60rem;
+    --Projecttransition-time: 0.5s;
 }
 
 header,
 main,
 footer {
     display: flex;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-header, main {
+header,
+main {
     align-items: center;
 }
 
 
 
-header{
+header {
     justify-content: space-between;
     position: sticky;
     top: 0;
 }
 
-main{
+main {
     flex-direction: column;
 }
 
@@ -47,36 +50,48 @@ nav a:hover {
     color: black;
 }
 
-.Projects{
+.Projects {
     display: flex;
-    padding: 2rem;
-    flex-direction: column;
-    width: ;
+    padding: 1rem;
+    flex-direction: row;
 }
 
-.img1, .img2{
-    border: solid;
+.img1,
+.img2 {
     border-radius: .5rem;
-    border-color: rgb(255, 255, 255);
-    width: 15rem;   
-     background-size: cover;
-    padding: 2rem;
+    width: 15rem;
+    background-size: cover;
     color: rgba(255, 255, 255, 0);
 
 }
 
-.img1{
+.img1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(104, 104, 104, 0.445) 0px 18px 36px 1000px inset;
     background-image: url(GraveLanters.png);
-    background-size: cover;
-    padding: 2rem;
 }
 
-.img2{
+.img2 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(104, 104, 104, 0.445) 0px 18px 36px 1000px inset;
+    transition: var(--Projecttransition-time);
     background-image: url(LettersSky.png);
 
 }
 
 
-.Centrerad{
-    width:  60rem;
+
+
+
+.img21 > div > div:hover{
+ box-shadow: none;
 }
+
+
+
+
+.Centrerad {
+    width: var(--max-width);
+    padding: 1rem;
+    align-self: flex-start;
+}
+
+footer {}
