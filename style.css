@@ -1,7 +1,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.945);
     background-image: url(kotaeche-street-7717463_1920.jpg);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.65) 0px 18px 36px 1000px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.85) 0px 18px 36px 1000px inset;
     background-size: cover;
     margin: 0;
 }
@@ -12,7 +12,7 @@ background-image: url(kotaeche-street-7717463_1920.jpg);
 
 
 :root {
-    --max-width: 60rem;
+    --Main-width: 40rem;
     --Projecttransition-time: 0.5s;
 }
 
@@ -21,10 +21,13 @@ main,
 footer {
     display: flex;
     color: rgb(255, 255, 255);
+    padding: 1rem;
 }
 
 header,
 main {
+    max-width: var(--Main-width);
+    
     align-items: center;
 }
 
@@ -38,6 +41,13 @@ header {
 
 main {
     flex-direction: column;
+}
+
+nav{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    flex-direction: row;
 }
 
 a {
@@ -58,6 +68,8 @@ nav a:hover {
 
 .img1,
 .img2 {
+    border:solid;
+    border-color: #ffffff;
     border-radius: .5rem;
     width: 15rem;
     background-size: cover;
