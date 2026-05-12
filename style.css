@@ -74,6 +74,7 @@ nav a:hover {
     width: 15rem;
     background-size: cover;
     color: rgba(255, 255, 255, 0);
+    transition:4s;
 
 }
 
@@ -93,7 +94,7 @@ nav a:hover {
 
 
 
-.img21 > div > div:hover{
+.img2:hover, .img1:hover{
  box-shadow: none;
 }
 
