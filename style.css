@@ -81,6 +81,7 @@ a {
     background-size: cover;
     color: rgba(255, 255, 255, 0);
     transition: 1s;
+    margin: 1rem;
 
 }
 
@@ -138,4 +139,6 @@ h1{
   font-family: "Supermercado One", sans-serif;
 }
 
-footer {}
+footer {
+    background-color: #212529;
+}
