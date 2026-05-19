@@ -1,10 +1,11 @@
 body {
     background-color: rgba(0, 0, 0, 0.849);
-    background-image: url(kotaeche-street-7717463_1920.jpg);
+    background-image: url(Pictures/kotaeche-street-7717463_1920.jpg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.75) 0px 18px 36px 1000px inset;
-    background-size: 3200px, 1920px;
+    background-size: cover;
     margin: 0;
 }
+
 
 
 background-image: url(kotaeche-street-7717463_1920.jpg);
@@ -67,14 +68,17 @@ nav a:hover {
 
 .Projects {
     display: flex;
+    width: 70rem;
     padding: 1rem;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .img1,
-.img2 {
+.img2,
+.img3 {
     border: solid;
-    border-color: #212529;
+    border-color: #212d3a;
     border-radius: .5rem;
     width: 15rem;
     height: 10rem;
@@ -82,6 +86,7 @@ nav a:hover {
     color: rgba(255, 255, 255, 0);
     transition: 1s;
     margin: .5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(104, 104, 104, 0.445) 0px 18px 36px 1000px inset;
 
 }
 
@@ -90,20 +95,22 @@ nav a:hover {
 }
 
 .img1 {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(104, 104, 104, 0.445) 0px 18px 36px 1000px inset;
-    background-image: url(GraveLanters.png);
+    background-image: url(Pictures/GraveLanters.png);
+}
+.img2 {
+    background-image: url(Pictures/LettersSky.png);
+
 }
 
-.img2 {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(104, 104, 104, 0.445) 0px 18px 36px 1000px inset;
-    background-image: url(LettersSky.png);
-
+.img3{
+    background-image: url(Pictures/Zero-requiem.png);
 }
 
 
 
 .img2:hover,
-.img1:hover {
+.img1:hover,
+.img3:hover {
     box-shadow: none;
     height: 20rem;
 }
@@ -112,11 +119,11 @@ nav a:hover {
 
 
 .Centrerad {
+    display: flex;
     border-radius: 1rem;
     background-color: #212529;
-    width: var(--max-width);
+    width: 70rem;
     padding: 1rem;
-    align-self: center;
 }
 
 
@@ -135,10 +142,12 @@ nav a:hover {
 
 
 h1 {
-
-    font-family: "Supermercado One", sans-serif;
+    font-family: "Baloo 2", sans-serif;
 }
+
 
 footer {
     background-color: #212529;
+    justify-content: space-between;
+    align-items: end;
 }
