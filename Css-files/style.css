@@ -97,12 +97,13 @@ nav a:hover {
 .img1 {
     background-image: url(Pictures/GraveLanters.png);
 }
+
 .img2 {
     background-image: url(Pictures/LettersSky.png);
 
 }
 
-.img3{
+.img3 {
     background-image: url(Pictures/Zero-requiem.png);
 }
 
@@ -122,7 +123,9 @@ nav a:hover {
     display: flex;
     border-radius: 1rem;
     background-color: #212529;
-    width: 70rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 70rem;
     padding: 1rem;
 }
 
@@ -135,10 +138,11 @@ nav a:hover {
 .Container1 {
     display: flex;
     flex-direction: column;
-    width: 80rem;
     margin: 1rem;
     font-family: "Baloo 2", sans-serif;
 }
+
+
 
 
 h1 {

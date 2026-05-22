@@ -1,0 +1,35 @@
+:root {
+    --primary-color: #212d3a;
+    --secondary-color: #212529;
+    --alternative-color: #339989;
+    --alternative-secondary-color: #f2fffd;
+    --table-cell-padding: 0.5rem;
+}
+
+
+
+table, td, th {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: var(--table-cell-padding);
+}
+
+th {
+    background-color: #212d3a;
+    align-self: center;
+}
+
+td{
+    background-color:#eae0d5a8 ;
+}
+
+
+tr:nth-child(odd) {
+}
+
+table {
+    margin: auto;
+}
