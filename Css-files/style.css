@@ -1,14 +1,12 @@
 body {
     background-color: rgba(0, 0, 0, 0.849);
-    background-image: url(Pictures/kotaeche-street-7717463_1920.jpg);
+    background-image: url("..Pictures/kotaeche-street-7717463_1920.jpg");
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.75) 0px 18px 36px 1000px inset;
     background-size: cover;
     margin: 0;
 }
 
 
-
-background-image: url(kotaeche-street-7717463_1920.jpg);
 
 
 
@@ -28,8 +26,8 @@ footer {
 header,
 main {
     max-width: var(--Main-width);
-
     align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -95,11 +93,11 @@ nav a:hover {
 }
 
 .img1 {
-    background-image: url(Pictures/GraveLanters.png);
+    background-image: url(.Pictures/GraveLanters.png);
 }
 
 .img2 {
-    background-image: url(Pictures/LettersSky.png);
+    background-image: url("../Pictures/GraveLanterns.png");
 
 }
 

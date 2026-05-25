@@ -26,10 +26,6 @@ td{
     background-color:#eae0d5a8 ;
 }
 
-
-tr:nth-child(odd) {
-}
-
 table {
     margin: auto;
 }
