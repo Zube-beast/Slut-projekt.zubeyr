@@ -8,12 +8,24 @@
 
 
 
-table, td, th {
+
+
+
+.Merch-img {
+    border-radius: 2rem;
+    border: 3px solid;
+}
+
+
+table,
+td,
+th {
     border: solid 1px black;
     border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
     padding: var(--table-cell-padding);
 }
 
@@ -22,8 +34,8 @@ th {
     align-self: center;
 }
 
-td{
-    background-color:#eae0d5a8 ;
+td {
+    background-color: #eae0d5a8;
 }
 
 table {

@@ -1,6 +1,6 @@
 body {
     background-color: rgba(0, 0, 0, 0.849);
-    background-image: url("..Pictures/kotaeche-street-7717463_1920.jpg");
+    background-image: url(/Pictures/kotaeche-street-7717463_1920.jpg);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.75) 0px 18px 36px 1000px inset;
     background-size: cover;
     margin: 0;
@@ -11,7 +11,7 @@ body {
 
 
 :root {
-    --Main-width: 40rem;
+    --Main-width: 70rem;
     --Projecttransition-time: 2s;
 }
 
@@ -20,12 +20,12 @@ main,
 footer {
     display: flex;
     color: rgb(255, 255, 255);
-    padding: 1rem;
+    padding: 3rem;
 }
 
 header,
 main {
-    max-width: var(--Main-width);
+    width: var(--Main-width);
     align-items: center;
     margin: 0 auto;
 }
@@ -33,7 +33,6 @@ main {
 
 
 header {
-    justify-content: space-between;
     position: sticky;
     top: 0;
 }
@@ -44,8 +43,7 @@ main {
 
 nav {
     display: flex;
-    gap: 1rem;
-    padding: 1rem;
+    padding: 2rem;
     flex-direction: row;
 
 }
@@ -74,16 +72,16 @@ nav a:hover {
 
 .img1,
 .img2,
-.img3 {
+.img3,
+.img4 {
     border: solid;
-    border-color: #212d3a;
+    border-color: #000000;
     border-radius: .5rem;
     width: 15rem;
     height: 10rem;
     background-size: cover;
-    color: rgba(255, 255, 255, 0);
-    transition: 1s;
     margin: .5rem;
+    transition: 1s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(104, 104, 104, 0.445) 0px 18px 36px 1000px inset;
 
 }
@@ -93,23 +91,28 @@ nav a:hover {
 }
 
 .img1 {
-    background-image: url(.Pictures/GraveLanters.png);
+    background-image: url(/Pictures/GraveLanters.png);
 }
 
 .img2 {
-    background-image: url("../Pictures/GraveLanterns.png");
+    background-image: url(/Pictures/LettersSky.png);
 
 }
 
 .img3 {
-    background-image: url(Pictures/Zero-requiem.png);
+    background-image: url(/Pictures/Zero-Requiem.png);
+}
+
+.img4{
+    background-image: url(/Pictures/Nameless.png);
 }
 
 
 
 .img2:hover,
 .img1:hover,
-.img3:hover {
+.img3:hover,
+.img4:hover {
     box-shadow: none;
     height: 20rem;
 }
@@ -123,7 +126,7 @@ nav a:hover {
     background-color: #212529;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 70rem;
+    width: var(--Main-width);
     padding: 1rem;
 }
 
@@ -140,8 +143,21 @@ nav a:hover {
     font-family: "Baloo 2", sans-serif;
 }
 
+.Questions{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.ForTheForm{
+    align-self: flex-start;
+}
 
+input, 
+textarea,
+button{
+    background-color: #eae0d5;
+}
 
 h1 {
     font-family: "Baloo 2", sans-serif;
