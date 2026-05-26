@@ -13,13 +13,15 @@ body {
 :root {
     --Main-width: 70rem;
     --Projecttransition-time: 2s;
+    --main-color: #212529;
+    --Alternative-color: #9ea5ac;
+    --Secondary-color: #eae0d5;
 }
 
 header,
-main,
-footer {
+main {
     display: flex;
-    color: rgb(255, 255, 255);
+    color: var(--Alternative-color);
     padding: 3rem;
 }
 
@@ -43,15 +45,14 @@ main {
 
 nav {
     display: flex;
-    padding: 2rem;
-    flex-direction: row;
+    padding: 1rem;
 
 }
 
 a {
     font-family: "Baloo 2", sans-serif;
     text-decoration: none;
-    color: #6c757d;
+    color: var(--Alternative-color);
     border-radius: .2rem;
     transition: .5s;
     padding: 1rem;
@@ -103,10 +104,18 @@ nav a:hover {
     background-image: url(/Pictures/Zero-Requiem.png);
 }
 
-.img4{
+.img4 {
     background-image: url(/Pictures/Nameless.png);
 }
 
+h1 {
+    background-color: var(--Secondary-color);
+    border: double;
+    border-color: #000000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.774) 0px 18px 36px -18px inset;
+    border-radius: 1rem;
+    padding: .5rem;
+}
 
 
 .img2:hover,
@@ -118,12 +127,20 @@ nav a:hover {
 }
 
 
+h1,
+h2,
+h3,
+p{
+    text-shadow: 1px -2px 20px #9ea5ace8;
+}
+
+
 
 
 .Centrerad {
     display: flex;
     border-radius: 1rem;
-    background-color: #212529;
+    background-color: var(--main-color);
     flex-direction: column;
     flex-wrap: wrap;
     width: var(--Main-width);
@@ -143,20 +160,28 @@ nav a:hover {
     font-family: "Baloo 2", sans-serif;
 }
 
-.Questions{
+.Questions {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.ForTheForm{
+.ForTheForm {
     align-self: flex-start;
 }
 
-input, 
+input,
 textarea,
-button{
-    background-color: #eae0d5;
+button {
+    border: double;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.774) 0px 18px 36px -18px inset;
+    border-radius: 1rem;
+    background-color: var(--Secondary-color);
+}
+
+input,
+button {
+    height: 1.5rem;
 }
 
 h1 {
@@ -165,7 +190,8 @@ h1 {
 
 
 footer {
-    background-color: #212529;
-    justify-content: space-between;
-    align-items: end;
+    display: flex;
+    padding: 1rem;
+    background-color: var(--main-color);
+    justify-content: space-around;
 }
