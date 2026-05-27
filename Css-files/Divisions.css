@@ -14,7 +14,9 @@
 .Merch-img {
     border-radius: 2rem;
     border: 3px solid;
+    width: 600px;
 }
+
 
 
 table,
@@ -39,6 +41,15 @@ td {
     background-color: #eae0d5;
 }
 
+img,
+textarea,
+table{
+    max-width: 100%;
+}
+
+
+
 table {
     margin: auto;
+    
 }
